@@ -11,9 +11,9 @@
 	  <a class="navbar-brand" href="">TI-BASIC Intro</a>
 	</div>
 	<ul class="nav navbar-nav navbar-right">
-	  <li><a href="">TI-(very)-BASIC</a></li>
-	  <li><a href="">TI-(not-so)-BASIC</a></li>
-	  <li><a href="">TI-ADVANCED</a></li>
+	  <li><a href="index.html">TI-(very)-BASIC</a></li>
+	  <li><a href="notsobasic.html">TI-(not-so)-BASIC</a></li>
+	  <li><a href="advanced.html">TI-ADVANCED</a></li>
 	  <li><a class="active" href="">Example Code</a></li>
 	</ul>
       </div>
@@ -52,22 +52,49 @@
 	  <br>
 	  :Prompt N
 	  <br>
-	  :(A-B)/N¡úZ
+	  :(A-B)/N&rarr;Z
 	  <br>
-	  :0¡úS
+	  :0&rarr;S
 	  <br>
-	  :If Xmin¡ÙA and Xmax¡ÙB
+	  :If Xmin&ne;A and Xmax&ne;B
 	  <br>
 	  :Then
 	  <br>
-	  :A¡úXmin
+	  :A&rarr;Xmin
 	  <br>
-	  :B¡úXmax
+	  :B&rarr;Xmax
 	  <br>
 	  :ZoomFit
 	  <br>
 	  :End
 	  <br>
+	</code>
+	<code class="col-sm-3 col-sm-offset-1 text-left">
+	  :For(X,A,B,Z)
+	  <br>
+	  :Y<sub>1</sub>&rarr;S
+	  <br>
+	  :X-Z&rarr;X
+	  <br>
+	  :S+((U+Y<sub>1</sub>)/2)&rarr;S
+	  <br>
+	  :X-Z&rarr;X
+	  <br>
+	  :If X&lt;B
+	  <br>
+	  :Then
+	  <br>
+	  :Line(X,0,X,U)
+	  <br>
+	  :X+Z&rarr;X
+	  <br>
+	  :Line(X-Z,U,X,Y<sub>1</sub>)
+	  <br>
+	  :Line(X,Y<sub>1</sub>,X,0)
+	  <br>
+	  :X-Z&rarr;X
+	  <br>
+	  :End:End
 	</code>
 	<div class="col-sm-12">
 	  <br>
@@ -75,7 +102,7 @@
 	<div class="col-sm-8">
 	  <p>This prompts you to enter numbers for variables A, B, and N. It produces a trapezoid approximation for n sub-intervals, and produces the following image in the graph.</p>
 	  <br>
-	  <img alt="test">
+	  <img class="img-responsive" alt="test" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/TrapRiemann2.svg/200px-TrapRiemann2.svg.png">
 	</div>
       </div>
   </body>
